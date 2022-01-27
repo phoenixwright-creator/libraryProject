@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#libraryTab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#addBookButton {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: rgb(128, 162, 255);
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+.bookLine {
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    justify-items: center;
+    height: 50px;
+    align-items: center;
+}
+
+.cell {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changeReadStatus, .deleteBook {
+    width: 75%;
+    height: 75%;
+}
+
+.color1 {
+    background-color: rgb(201, 201, 201);
+}
+
+.color2 {
+    background-color: rgb(217, 237, 255);
+}
+
+.info {
+    background-color: yellow;
+}
+
+.danger {
+    background-color: red;
+}

@@ -9,7 +9,29 @@
 </head>
 <body>
     <h1 id="title">Books in the library : </h1>
-    <div id="libraryTab"></div>
+    <div id="libraryTab">
+    </div>
+    <div id="overlay">
+            <form id="addBookForm">
+                <label for="formBookName" id="formBookNameLabel">Name of the book:</label><br>
+                <input type="text" id="formBookName" name="formBookName" required><br>
+    
+                <label for="formBookAuthor" id="formBookAuthorLabel">Name of the author:</label><br>
+                <input type="text" id="formBookAuthor" name="formBookAuthor" required><br>
+    
+                <label for="formPagesNumber" id="formPagesNumberLabel">Number of pages:</label><br>
+                <input type="number" id="formPagesNumber" name="formPagesNumber" required><br>
+                
+                <label for="formReadStatus" id="formReadStatusLabel">Have you read this book ?</label><br>
+                <input type="radio" id="formRead" name="formReadStatus" checked>
+                <label for="formRead" id="formReadYes">Yes</label><br>
+                <input type="radio" id="formNotRead" name="formReadStatus">
+                <label for="formNotRead" id="formReadNo">No</label><br>
+    
+                <input type="button" id="addBook" value="Add this book">
+                <input type="button" id="cancel" value="Cancel">
+            </form>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

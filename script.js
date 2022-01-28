@@ -163,11 +163,15 @@ const addBookFormButton = document.getElementById('addBook');
     const pages = document.getElementById('formPagesNumber').value;
     const read = document.getElementById('formRead');
 
-    if (title !== "" && author !== "" && pages !== null && read.checked === true) {
+    if (pages <= 0) {
+      alert ("A book with no pages doesn't even exist !");
+      return;
+    }
+    else if (title !== "" && author !== "" && pages !== null && pages > 0 && read.checked === true) {
       let book = new Book(title, author, pages, 'YES');
       myLibrary.push(book);
     }
-    else if (title !== "" && author !== "" && pages !== null && read.checked === false) {
+    else if (title !== "" && author !== "" && pages !== null && pages > 0 && read.checked === false) {
       let book = new Book(title, author, pages, 'NO');
       myLibrary.push(book);
     }

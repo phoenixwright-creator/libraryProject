@@ -1,28 +1,30 @@
 body {
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #title {
     text-align: center;
-    margin-bottom: 50px;
 }
 
 #libraryTab {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 #addBookButton {
     display: inline-block;
-    align-self: flex-start;
+    align-self: center;
     background-color: rgb(128, 162, 255);
     border: 1px solid black;
     padding: 10px;
     margin-bottom: 40px;
-    font-size: 17px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .bookLine {
@@ -45,6 +47,7 @@ body {
 .changeReadStatus, .deleteBook {
     width: 75%;
     height: 75%;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .color1 {
@@ -93,7 +96,10 @@ body {
         "readStatusLabel readStatusLabel readStatusLabel readStatusLabel"
         "readStatusRadioYes readStatusYes readStatusRadioNo readStatusNo"
         "addBook addBook cancel cancel";
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -101,52 +107,98 @@ body {
 
 #formBookNameLabel {
     grid-area: bookNameLabel;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #formBookName {
     grid-area: bookNameInput;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 5px;
 }
 
 #formBookAuthorLabel {
     grid-area: bookAuthorLabel;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #formBookAuthor {
     grid-area: bookAuthorInput;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #formPagesNumberLabel {
     grid-area: pagesNumberLabel;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #formPagesNumber {
     grid-area: pagesNumberInput;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #formReadStatusLabel {
     grid-area: readStatusLabel;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #formRead {
     grid-area: readStatusRadioYes;
+    margin-bottom: 10px;
+    justify-self: end;
+    margin-right: 10px;
 }
 
 #formReadYes {
     grid-area: readStatusYes;
+    font-size: 20px;
+    margin-bottom: 10px;
+    justify-self: start;
 }
 
 #formNotRead {
     grid-area: readStatusRadioNo;
+    margin-bottom: 10px;
+    justify-self: end;
+    margin-right: 10px;
 }
 
 #formReadNo {
     grid-area: readStatusNo;
+    font-size: 20px;
+    margin-bottom: 10px;
+    justify-self: start;
 }
 
 #addBook {
     grid-area: addBook;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 10px;
+    background-color: rgb(128, 162, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #cancel {
     grid-area: cancel;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 10px;
+    background-color: rgb(255, 64, 64);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
